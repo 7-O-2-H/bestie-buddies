@@ -1,0 +1,133 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  background-color: seagreen;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  z-index: 9999;
+}
+.navbar-logo {
+display: flex;
+align-items: center;
+text-decoration: none;
+color: white;
+font-size: 18px;
+font-weight: bold;
+cursor: pointer;
+}
+
+.bestie {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  justify-content: space-around;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 40px;
+}
+
+.links {
+
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content:flex-end;
+  color: white;
+  font-family: 'Josefin Sans';
+  font-size: 40px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 20px;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.toggleButton {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.toggleButton svg {
+  font-size: 50px;
+}
+.toggleButton button {
+  margin-right: 20px;
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+#open {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#open .links {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -50;
+}
+
+#open a {
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+  .navbar a {
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .toggleButton {
+    display: flex;
+  }
+  #close a {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .toggleButton {
+    display: none;
+  }
+
+  .hiddenLinks {
+    display: none;
+  }
+
+  #open {
+    height: 100px;
+  }
+
+  #open .links {
+    flex-direction: row;
+  }
+}
+
+button {
+
+  background-color: seagreen;
+  border: none;
+  color: white;
+  font-size: 25px;
+  border-radius: 3px;
+  height: 100hv;
+  margin: 20px;
+  font-family: 'Josefin Sans';
+}
+
+button:hover {
+  cursor: pointer;
+}
