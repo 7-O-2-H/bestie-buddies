@@ -1,5 +1,5 @@
 DROP TABLE IF EXISTS properties CASCADE;
--- CREATE PROJECTS
+-- CREATE properties
 CREATE TABLE properties (
   id SERIAL PRIMARY KEY,
   principal_address BOOLEAN DEFAULT TRUE,

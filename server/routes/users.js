@@ -1,9 +1,15 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const userQueries = require('../db/queries/users');
+const { pool } = require('../db/queries/pool');
 
-/* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+
+/* GET users  */
+router.get('/', function(req, res) {
+  userQueries.getAllUsers()
+  .then(data=> {
+    res.json(data)
+  });
 });
 
 module.exports = router;

@@ -1,0 +1,2 @@
+INSERT INTO properties (principal_address, street_number, street_name, street_type, city, province, country, postal_code, user_id)
+VALUES (TRUE, 123, 'Fake', 'Street', 'Sarnia', 'ON', 'Canada', 'N7S 6C9', 3);

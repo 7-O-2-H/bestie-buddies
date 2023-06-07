@@ -1,8 +1,0 @@
-DROP TABLE IF EXISTS pets CASCADE;
--- CREATE PROJECTS
-CREATE TABLE pets (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(50) NOT NULL,
-  type VARCHAR(60) NUT NULL,
-  additional_details TEXT
-);

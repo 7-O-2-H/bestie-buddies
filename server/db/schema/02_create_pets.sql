@@ -1,0 +1,9 @@
+DROP TABLE IF EXISTS pets CASCADE;
+-- CREATE pets
+CREATE TABLE pets (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  type VARCHAR(60) NOT NULL,
+  additional_details TEXT,
+  user_id INTEGER REFERENCES users(id) ON DELETE CASCADE
+);
