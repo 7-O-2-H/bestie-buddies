@@ -5,7 +5,7 @@ const { pool } = require('../db/queries/pool');
 
 
 /* GET users  */
-router.get('/', function(req, res) {
+router.get('/users', function(req, res) {
   userQueries.getAllUsers()
   .then(data=> {
     res.json(data)
