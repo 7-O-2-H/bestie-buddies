@@ -10,6 +10,7 @@ export default function useAppData() {
     .then((data) => {
       setReviews(data)
     })
-  })
+  }, []);
+  
   return { reviews };
 };

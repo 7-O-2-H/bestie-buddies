@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function getReviews() {
 
-  return axios.get('/projects')
+  return axios.get('/reviews')
   .then((data) => {
     return data;
   })
