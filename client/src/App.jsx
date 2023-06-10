@@ -7,6 +7,8 @@ import Navbar from "./Components/Navbar";
 import './App.css';
 import ReviewList from "./components/ReviewList";
 import HomePage from './components/HomePage';
+import Contact from './components/Contact';
+import Login from './components/Login';
 
 export default function App() {
 
@@ -20,6 +22,8 @@ export default function App() {
         <Routes>
           <Route path='/' element = {<HomePage/>} />
           <Route path='/about' element = {<ReviewList/>} />
+          <Route path='/contact' element = {<Contact/>} />
+          <Route path='/login' element = {<Login/>} />
         </Routes>
       </Router>
         
