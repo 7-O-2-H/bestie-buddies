@@ -25,22 +25,19 @@ export default function Navbar() {
 
   return (
 
-    <div className="navbar" id={expandNavbar ? "open" : "close"}>
+    <div className="navbar" >
       <div className="bestie">
-        <div>
-          bestie <FontAwesomeIcon icon={faBone}/>
-        </div> 
-        <div>
-          BUDDIES
+          <Link to='/' >
+            bestie <FontAwesomeIcon icon={faBone}/>       
+            BUDDY
+          </Link>
         </div>
-        
-      </div>
       <div className="toggleButton">
-        <button onClick={() => {
+        {/* <button onClick={() => {
           setExpandNavbar((prev) => !prev);
         }}>
         
-        </button>
+        </button> */}
       </div>
       <div className="links">
         <Link to="/about"> ABOUT </Link>

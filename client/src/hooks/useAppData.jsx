@@ -8,9 +8,9 @@ export default function useAppData() {
   useEffect(() => {
     getReviews()
     .then((data) => {
-      setReviews(data)
+      setReviews(data.data)
     })
   }, []);
-  
+
   return { reviews };
 };

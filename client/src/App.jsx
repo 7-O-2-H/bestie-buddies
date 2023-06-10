@@ -4,8 +4,9 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import HomePage from "./components/HomePage";
-import './App.css'
+import './App.css';
+import ReviewList from "./components/ReviewList";
+import HomePage from './components/HomePage';
 
 export default function App() {
 
@@ -18,6 +19,7 @@ export default function App() {
         <i className="fa-regular fa-dog-leashed"></i>
         <Routes>
           <Route path='/' element = {<HomePage/>} />
+          <Route path='/about' element = {<ReviewList/>} />
         </Routes>
       </Router>
         
