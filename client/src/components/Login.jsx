@@ -13,11 +13,8 @@ export default function Login() {
       
       <form method="post" className="login">
         <h1 className="form-title">Login</h1>
-          <input type="text" className="login-field" placeholder="First Name"/>
-          <input type="text" className="login-field" placeholder="Last Name"/>
           <input type="email" className="login-field" placeholder="example@gmail.com"/>
           <input type="password" className="login-field" placeholder="Password"/>
-          <input type="text" className="login-field" placeholder="Verify Password"/>
           <button type="submit" className="login-button">LOGIN</button>  
         </form>
       

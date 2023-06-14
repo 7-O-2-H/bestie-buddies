@@ -50,7 +50,7 @@ export default function Navbar() {
     {/* ) : ( */}
       <>
         <Link to="/login"> LOGIN </Link>
-        <Link to="/registration">SIGNUP</Link>
+        <Link to="/signup">SIGNUP</Link>
       </>
       </div>
     </div>
