@@ -35,3 +35,7 @@
   padding: 15px 25px 8px 25px;
   margin-bottom: 40px;
 }
+
+.login-alert {
+  color: red;
+}

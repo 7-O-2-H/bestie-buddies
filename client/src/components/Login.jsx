@@ -2,20 +2,23 @@ import { useState } from "react";
 import React from "react";
 import "./styles/Login.css";
 import { validateUser } from "../helpers/usersHelpers";
+import SlideAlert from "react-slide-alerts";
 
 export default function Login() {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [validUser, setValidUser] = useState(true);
 
   const handleLogin = (event) => {
 
     event.preventDefault();
 
     validateUser(email, password).then((data) => {
-      console.log(data);
+      console.log(data['data'][0]);
+      setValidUser(data['data'][0]);
     })
-    console.log(password, email);
+    // console.log(`PW: ${password}, Email: ${email}`);
   }
 
   return (
@@ -41,6 +44,11 @@ export default function Login() {
             value={password}
             onChange={(event) => setPassword(event.target.value)}
           />
+          <div className="login-alert">
+            {!validUser && (
+              <div>Your email or password is incorrect!</div>
+            )}
+          </div>
           <button type="submit" className="login-button">LOGIN</button>  
         </form>
       

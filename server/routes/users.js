@@ -19,7 +19,15 @@ router.put('/login', function(req, res) {
 
   userQueries.getUserByEmail(email)
   .then(data => {
-    return res.json(data);
+    if (!data[0]) {
+      return res.json([false, `Error: email not in database: ${email}`, data]);
+    }
+
+    if (password != data[0].password) {
+      return res.json([false, 'Error: Your password is incorrect!', data]);
+    }
+
+    return res.json([true, data]);
   });
 });
 
