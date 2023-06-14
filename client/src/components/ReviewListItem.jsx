@@ -9,7 +9,7 @@ export default function ReviewListItem(props) {
   return (
 
     <div className="reviews">
-      <p>"{review}"</p>
+      <h3>"{review}"</h3>
       <h3>- {reviewer}</h3>
       <div className="break">
       </div>

@@ -24,9 +24,9 @@ export default function ReviewList() {
       <h2 className="title">Testimonials</h2>
       <div className="underline">
       </div>
-      <p>
+      <div>
           {reviewsArray}
-      </p>
+      </div>
     </div>
   );
 }

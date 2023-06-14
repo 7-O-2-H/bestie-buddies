@@ -12,4 +12,15 @@ router.get('/users', function(req, res) {
   });
 });
 
+router.put('/login', function(req, res) {
+
+  const email = req.body.email;
+  const password = req.body.password;
+
+  userQueries.getUserByEmail(email)
+  .then(data => {
+    return res.json(data);
+  });
+});
+
 module.exports = router;
