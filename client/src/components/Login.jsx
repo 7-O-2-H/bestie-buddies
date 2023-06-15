@@ -2,9 +2,12 @@ import { useState } from "react";
 import React from "react";
 import "./styles/Login.css";
 import { validateUser } from "../helpers/usersHelpers";
-import SlideAlert from "react-slide-alerts";
+import Signup from "./Signup";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Login() {
+
+  const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -15,17 +18,22 @@ export default function Login() {
     event.preventDefault();
 
     validateUser(email, password).then((data) => {
-      console.log(data['data'][0]);
-      setValidUser(data['data'][0]);
-    })
-    // console.log(`PW: ${password}, Email: ${email}`);
-  }
+      if(!(data['data'][0])) {
+        setValidUser(data['data'][0]);
+      }
+      else {
+        localStorage.setItem("user_id", data['data'][1][0].id);
+        localStorage.setItem("loggedIn", (true));
+        navigate("/about");
+      }
+    });
+  };
 
   return (
     <div className="login-page"> 
       <div className="leftie" >
         <h2>Bestie Buddy</h2>
-        <p>Login to connect to Kathy</p>
+        <p>Login or signup to connect to Kathy</p>
       </div>
       
       <form onSubmit={handleLogin} className="login">
@@ -49,9 +57,11 @@ export default function Login() {
               <div>Your email or password is incorrect!</div>
             )}
           </div>
-          <button type="submit" className="login-button">LOGIN</button>  
+          <button type="submit" className="login-button">LOGIN</button>
+          <div className="signup-link">
+            <Link to="/signup">Click here to register</Link>
+          </div>
         </form>
-      
     </div>
   );
 

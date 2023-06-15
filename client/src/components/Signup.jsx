@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import "./styles/Signup.css";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 export default function signup() {
 
@@ -19,6 +20,9 @@ export default function signup() {
           <input type="password" className="signup-field" placeholder="Password"/>
           <input type="text" className="signup-field" placeholder="Verify Password"/>
           <button type="submit" className="signup-button">Signup</button>  
+          <div className="signup-link">
+            <Link to="/login">Click here to login</Link>
+          </div>
         </form>
       
     </div>

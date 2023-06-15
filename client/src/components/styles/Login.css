@@ -33,9 +33,13 @@
 .login-button {
   border-radius: 25px;
   padding: 15px 25px 8px 25px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .login-alert {
   color: red;
+}
+
+.signup-link {
+  padding-bottom: 5%;
 }
