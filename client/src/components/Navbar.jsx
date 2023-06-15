@@ -40,6 +40,7 @@ export default function Navbar() {
         </div>
         {loggedIn ? (
           <div>
+            <Link to="/calendar">CALENDAR</Link>
             <Link to="/contact"> CONTACT </Link>  
             <Link to="/login" onClick={handleLogout}>LOGOUT</Link>  
           </div>
