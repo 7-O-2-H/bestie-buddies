@@ -1,7 +1,7 @@
 import React from "react";
 import ReviewListItem from "./ReviewListItem";
 import useAppData from "../hooks/useAppData";
-import "./Reviews.css";
+import "./styles/Reviews.css";
 
 export default function ReviewList() {
 

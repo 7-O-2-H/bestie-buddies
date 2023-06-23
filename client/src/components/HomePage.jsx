@@ -1,6 +1,6 @@
 import React from "react";
 import useAppData from "../hooks/useAppData";
-import ReviewList from "./ReviewList";
+import Slideshow from "./Slideshow";
 
 export default function HomePage() {
 
@@ -8,12 +8,6 @@ export default function HomePage() {
   console.log(reviews.data);
 
   return (
-    <div>
-      {/* <ReviewList
-        key={reviews.data.id}
-        review={reviews.data.review}
-        reviewer={reviews.data.reviewer}
-      /> */}
-    </div>
+    <Slideshow />
   )
 }

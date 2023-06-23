@@ -1,11 +1,10 @@
 import React from "react";
-import "./Reviews.css";
+import "./styles/Reviews.css";
 
 export default function ReviewListItem(props) {
 
-
   const { review, reviewer } = props;
-  //console.log(review, reviewer);
+
   return (
 
     <div className="reviews">
