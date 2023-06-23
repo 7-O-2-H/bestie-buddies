@@ -30,8 +30,8 @@ export default function Navbar() {
     <div className="navbar" >
       <div className="bestie">
           <Link to='/' >
-            bestie <FontAwesomeIcon icon={faBone}/>       
-            BUDDY
+            Pawsitively 
+            PALS <FontAwesomeIcon icon={faBone}/>       
           </Link>
       </div>
       <div className="links">

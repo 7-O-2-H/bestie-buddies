@@ -10,6 +10,7 @@ import HomePage from './components/HomePage';
 import Contact from './components/Contact';
 import Login from './components/Login';
 import Signup from './components/Signup';
+import Calendar from './components/Calendar';
 
 export default function App() {
 
@@ -26,6 +27,7 @@ export default function App() {
           <Route path='/contact' element = {<Contact/>} />
           <Route path='/login' element = {<Login/>} />
           <Route path='/signup' element = {<Signup/>} />
+          <Route path='/calendar' element = {<Calendar/>} />
         </Routes>
       </Router>
         

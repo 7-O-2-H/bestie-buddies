@@ -1,0 +1,12 @@
+button {
+  color: black;
+}
+
+.react-calendar__tile {
+  width: 10%;
+}
+
+/* .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
+  width: 20px !important;
+} */
+/* <button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="May 29, 2023">29</abbr></button> */
