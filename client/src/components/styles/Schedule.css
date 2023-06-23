@@ -2,8 +2,8 @@ button {
   color: black;
 }
 
-.react-calendar__tile {
-  width: 10%;
+.calendar {
+  width: 35%;
 }
 
 /* .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {

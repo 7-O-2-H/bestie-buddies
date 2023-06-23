@@ -1,14 +1,22 @@
 import { useState } from "react";
-import Schedule from "./Schedule";
-// import "./styles/Schedule.css";
+import DateRangePicker from "tw-daterange";
+import "./styles/Schedule.css";
 
 export default function Calendar() {
-  const [value, onChange] = useState(new Date());
+  const [range, setRange] = useState({
+    startDate: new Date(),
+    endDate: new Date(),
+  })
 
   return (
-    <div className="play">
-      <Schedule/>
+    <div className="calendar" >
+
+      <DateRangePicker
+        initialRange={range}
+        onUpdate={(dateRange) => {
+          setRange(dateRange)
+        }}
+      />
     </div>
   )
-
 }
