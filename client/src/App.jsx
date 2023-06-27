@@ -20,7 +20,6 @@ export default function App() {
       <Router>
 
         <Navbar />
-        <i className="fa-regular fa-dog-leashed"></i>
         <Routes>
           <Route path='/' element = {<HomePage/>} />
           <Route path='/about' element = {<ReviewList/>} />
