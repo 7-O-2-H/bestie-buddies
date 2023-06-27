@@ -55,6 +55,7 @@ const slidesContainerStyles = {
 const slidesContainerOverflowStyles = {
   overflow: "hidden",
   height: "100%",
+  borderRadius: "15px",
 };
 
 const Slideshow = ({ slides, parentWidth }) => {

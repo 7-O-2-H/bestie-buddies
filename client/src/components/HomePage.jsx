@@ -41,7 +41,7 @@ export default function HomePage() {
 
   const containerStyles = {
     width: "60%",
-    height: "600px",
+    height: "560px",
     margin: "0 auto",
     padding: "80px 0 0 0",
   };
