@@ -1,0 +1,25 @@
+.breaker {
+  margin-top: 96px;
+  margin-left: 8%;
+  margin-right: 8%;
+  border: solid;
+  border-width: 0.2px;
+  border-radius: 50px;
+}
+
+.footer {
+  color: darkgray;
+  border-top-width: 2px;
+  border-top: black;
+  padding-top: 70px;
+  padding-left: 13%;
+  padding-bottom: 140px;
+}
+
+p {
+  color: gray;
+}
+
+.profur {
+  padding-left: 2%;
+}

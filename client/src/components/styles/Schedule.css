@@ -1,12 +1,28 @@
 button {
-  color: black;
+  background-color: revert;
+  border: revert;
+  color:  revert;
+  font-size: revert;
+  border-radius: revert;
+  height: revert;
+  margin: revert;
+  font-family: revert;
+}
+
+.calendar-space {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .calendar {
-  width: 35%;
+  flex-direction: column;
+  align-self: center;
+  justify-content: space-evenly;
+  /* padding: 0 5px;
+  border-radius: 8px; */
+  border: solid;
+  border-color: black;
 }
 
-/* .react-calendar__tile.react-calendar__month-view__days__day.react-calendar__month-view__days__day--neighboringMonth {
-  width: 20px !important;
-} */
-/* <button class="react-calendar__tile react-calendar__month-view__days__day react-calendar__month-view__days__day--neighboringMonth" type="button" style="flex: 0 0 14.2857%; overflow: hidden; margin-inline-end: 0px;"><abbr aria-label="May 29, 2023">29</abbr></button> */

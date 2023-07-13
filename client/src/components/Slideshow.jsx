@@ -49,7 +49,7 @@ const dotStyle = {
 const slidesContainerStyles = {
   display: "flex",
   height: "100%",
-  transition: "transform ease-out 0.3s",
+  transition: "transform ease-out 0.4s",
 };
 
 const slidesContainerOverflowStyles = {
@@ -91,7 +91,7 @@ const Slideshow = ({ slides, parentWidth }) => {
     }
     timerRef.current = setTimeout(() => {
       goToNext();
-    }, 2000);
+    }, 2250);
 
     return () => clearTimeout(timerRef.current);
   }, [goToNext]);

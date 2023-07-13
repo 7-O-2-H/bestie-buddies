@@ -46,11 +46,13 @@ export default function HomePage() {
     padding: "80px 0 0 0",
   };
 
-  const { reviews } = useAppData();
+  const width = {
+    width: "60%",
+  }
 
   return (
     <div style={containerStyles}>
-      <Slideshow slides={slides} parentWidth={907} />
+      <Slideshow slides={slides} parentWidth={908} />
     </div>
   )
 }

@@ -6,7 +6,7 @@ export default function Schedule() {
 
   return (
     <div className="wtf">
-      <Calendar/>
+      <Calendar />
     </div>
   )
 
